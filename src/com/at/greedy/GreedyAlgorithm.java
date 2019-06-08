@@ -1,6 +1,5 @@
 package com.at.greedy;
 
-import java.security.Key;
 import java.util.*;
 
 /**
@@ -60,7 +59,7 @@ public class GreedyAlgorithm {
         while (allAreas.size() != 0) {
             maxKey = null;
             for (String key : map.keySet()) {
-                if(select.contains(key)){
+                if (select.contains(key)) {
                     continue;
                 }
                 temp.clear();

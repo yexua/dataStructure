@@ -6,9 +6,9 @@ import java.util.*;
  * 图的邻接矩阵存储表示
  */
 public class AMGraph {
-    private List<String> vertex; //顶点表
-    int[][] arcs; // 临界矩阵
-    int vexNum, arcNum; //图的当前点数和边数
+    public List<String> vertex; //顶点表
+    public int[][] arcs; // 临界矩阵
+    public int vexNum, arcNum; //图的当前点数和边数
 
     public AMGraph(int n) {
         vertex = new ArrayList<>();
@@ -108,10 +108,11 @@ public class AMGraph {
      */
     public void insertVertex(String vertex) {
         this.vertex.add(vertex);
+        vexNum++;
     }
 
     /**
-     * 添加边
+     * 添加边，创建的是一个无向图
      *
      * @param v1     点的下标
      * @param v2     第二个顶点对应的下标
