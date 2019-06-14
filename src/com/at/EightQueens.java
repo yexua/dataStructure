@@ -1,7 +1,7 @@
 package com.at;
 
 public class EightQueens {
-    public static final int max = 8;
+    public static final int max = 4;
     int[] array = new int[max];
 
     public static void main(String[] args) {
